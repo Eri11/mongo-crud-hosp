@@ -1,0 +1,32 @@
+<div class="container">
+
+    <h2 class="display-2 p-3 text-center">Directorio Medico</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Hospital</th>
+                <th scope="col">Consultorio</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Cedula Profesional</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let medico of medicos">
+                <td>{{medico.nombre}}</td>
+                <td>{{medico.especialidad}}</td>
+                <td>{{medico.hospital}}</td>
+                <td>{{medico.consultorio}}</td>
+                <td>{{medico.telefono}}</td>
+                <td>{{medico.cedProf}}</td>
+
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>
